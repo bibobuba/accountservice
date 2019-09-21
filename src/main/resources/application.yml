@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  jetty:
+    acceptors: 5
+
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 123123
+    driverClassName: org.postgresql.Driver
+    hikari:
+      maximumPoolSize: 5
+
+management:
+  endpoints:
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: health,env,info,prometheus

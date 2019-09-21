@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <Property name="consoleMessagePattern"
+              value="%level %d{HH:mm:ss.SSS} %highlight{%5p} %logger{36} : %m%n"/>
+
+    <Property name="application" value="account-service"/>
+
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${consoleMessagePattern}</pattern>
+        </encoder>
+    </appender>
+
+    <Logger name="com.zaxxer.hikari" level="debug" additivity="true">
+        <appender-ref ref="Console" level="debug"/>
+    </Logger>
+
+    <Root level="info">
+        <appender-ref ref="Console" level="info"/>
+    </Root>
+
+</configuration>
