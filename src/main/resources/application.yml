@@ -1,7 +1,5 @@
 server:
   port: 8080
-  jetty:
-    acceptors: 5
 
 spring:
   datasource:
