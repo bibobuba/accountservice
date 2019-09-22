@@ -27,7 +27,6 @@ repositories {
 }
 
 dependencies {
-
     compile 'org.springframework.boot:spring-boot-starter-data-jdbc'
     compile 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
@@ -37,8 +36,5 @@ dependencies {
 
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-jetty', version: '2.1.8.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.1.8.RELEASE'
-
     compile group: 'io.micrometer', name: 'micrometer-registry-prometheus', version: '1.2.1'
-
-
 }
