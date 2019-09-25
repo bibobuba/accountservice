@@ -5,6 +5,8 @@ Objective: create a service and evaluate the access time to it, depending on the
 -------------------------------------------------- -------------------------------------------------- -
 1. Create a service with the following interface:
 -------------------------------------------------- -------------------------------------------------- -
+
+```java
 public interface AccountService
 {
     / **
@@ -22,6 +24,7 @@ public interface AccountService
      * /
     void addAmount (Integer id, Long value);
 }
+```
 
 The service will operate in a highly loaded fault tolerant system.
 
